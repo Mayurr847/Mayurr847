@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cream-DEFAULT: #F5EFE6;
+  --color-cream-paper: #FAF7F2;
+
+  --color-espresso-DEFAULT: #1D1916;
+  --color-espresso-light: #2E2722;
+  --color-espresso-muted: #5A5048;
+
+  --color-matcha-DEFAULT: #8FAF78;
+  --color-butter-DEFAULT: #F4D35E;
+  --color-butter-btn: #EFC958;
+  --color-cherry-DEFAULT: #D94A45;
+
+  --font-spartan: 'League Spartan', 'Archivo Black', sans-serif;
+  --font-display: 'League Spartan', 'Archivo Black', sans-serif;
+  --font-handwritten: 'Caveat', 'Gochi Hand', 'Patrick Hand', cursive;
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+@layer base {
+  body {
+    background-color: #F5EFE6;
+    color: #1D1916;
+    font-family: 'Inter', system-ui, sans-serif;
+    position: relative;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3 {
+    font-family: 'League Spartan', 'Archivo Black', sans-serif;
+    font-weight: 900;
+    letter-spacing: -0.04em;
+    line-height: 0.88;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #EFE8DD;
+}
+::-webkit-scrollbar-thumb {
+  background: #D5CBBC;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #1D1916;
+}
+
+/* Accessible focus visible */
+button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visible {
+  outline: 2px solid #1D1916;
+  outline-offset: 2px;
+}
